@@ -1,0 +1,41 @@
+body{
+	display:grid;
+	grid-template: repeat(20, 30px) / 1fr 1fr;
+	gap:10px 25px;
+	font-size:20px;
+}
+#header{
+	background-color:blue;
+	grid-column: span 2;
+	grid-row:span 2;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#scelta{
+	background-color:green;
+	grid-column: span 2;
+	grid-row:span 2;
+	
+	display:grid;
+	grid-template: 1fr/repeat(3, 1fr);
+	align-items:center;
+	justify-items:center;
+}
+#ram{
+	background-color:red;
+	grid-row: span 15;
+}
+#cpu{
+	background-color:yellow;
+	grid-row: span 15;
+	
+	display:grid;
+	grid-template: repeat(8, 1fr)/1fr 1fr;
+	justify-items:center;
+	align-items:center;
+}
+#avanti{
+	grid-column: span 2;
+}
